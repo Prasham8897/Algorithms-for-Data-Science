@@ -1,0 +1,28 @@
+ Nodes are assumed to be numbered 1 to n, arcs are specified
+ by pairs of head and tail nodes.
+
+ Descriptor items:
+
+   c <some text>   - comment line
+
+   p min <nodes> <arcs>  - problem line, 
+
+         appears before any node and arc descriptor line,
+
+     <nodes> - number of nodes 
+     <arcs>  - number of arcs 
+
+   n <id> <flow> - node descriptor line,
+
+          appears before any arc descriptor line,
+
+     <id> - node identification number
+     <flow> - node flow value
+
+   a <v> <w> <low> <cap> <cost> - arc descriptor line,
+
+     <v>    - identification number of tail node
+     <w>    - identification number of head node
+     <low>  - lower bound for <cap>
+     <cap>  - capacity of arc, uncapacitated arc if <cap> < 0
+     <cost> - cost of arc
